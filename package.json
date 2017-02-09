@@ -1,0 +1,25 @@
+{
+  "name": "molten-api-websocket",
+  "version": "1.0.0",
+  "description": "WebSocket API for MoltenDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoltenDB/molten-api-websocket.git"
+  },
+  "keywords": [
+    "MoltenDB"
+  ],
+  "author": "Jack Farley <bytesnz>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MoltenDB/molten-api-websocket/issues"
+  },
+  "homepage": "https://github.com/MoltenDB/molten-api-websocket#readme",
+  "devDependencies": {
+    "jasmine-es6": "~0.4.0"
+  }
+}

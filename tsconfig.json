@@ -1,0 +1,10 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./build",
+    "target": "es6",
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "sourceMap": false
+  }
+}
