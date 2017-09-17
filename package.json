@@ -4,7 +4,8 @@
   "description": "WebSocket API for MoltenDB",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "ava",
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,17 @@
   },
   "homepage": "https://github.com/MoltenDB/molten-api-websocket#readme",
   "devDependencies": {
-    "jasmine-es6": "~0.4.0"
+    "@types/socket.io": "^1.4.30",
+    "ava": "^0.22.0",
+    "mock-socket": "^7.0.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.tests.js"
+    ]
+  },
+  "dependencies": {
+    "socket.io": "^2.0.3",
+    "molten-core": "https://github.com/MoltenDB/molten-core.git"
   }
 }

@@ -1,10 +1,15 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./",
     "target": "es6",
+    "module": "commonjs",
     "noImplicitAny": false,
     "jsx": "preserve",
-    "sourceMap": false
-  }
+    "sourceMap": true
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": []
 }
