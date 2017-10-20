@@ -44,7 +44,7 @@ const createQueryHandler = (mdb: MDB.MDBInstace,
           case 'collection':
             socket.emit(`${options.eventBaseName}result`, {
               id: data.id,
-              data: collection.options()
+              collectionOptions: collection.options()
             });
             return;
           case 'create':
@@ -62,14 +62,14 @@ const createQueryHandler = (mdb: MDB.MDBInstace,
           case 'read':
             resultPromise = collection.read(data.filter, data.options).then(results => {
               let response = {
-                                id: data.id,
-                                                code: 200,
-                                                                results: results.raw(),
-                                                                                length: results.length
-                                                                                              };
+                id: data.id,
+                code: 200,
+                results: results.raw(),
+                length: results.length
+              };
 
               if (data.includeCollection) {
-                response.collection = collection.options()
+                response.collectionOptions = collection.options()
               }
 
               socket.emit(`${options.eventBaseName}result`, response);

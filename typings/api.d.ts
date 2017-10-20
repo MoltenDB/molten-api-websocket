@@ -1,3 +1,5 @@
+import * as MDB from 'molten-core';
+
 declare namespace MDB.API.WebSocket {
   export type SocketQueryType = 'collection'
       | 'create'
@@ -50,6 +52,7 @@ declare namespace MDB.API.WebSocket {
 
   export interface ResultResponse {
     code: number,
+    collectionOptions?: MDB.CollectionOptions,
     results?: any[]
   };
 
